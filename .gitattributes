@@ -3,19 +3,23 @@
 
 # ---------------------------------------------------------------------------
 # Images & Graphics
+#
+# NOT tracked in Git LFS: Vercel clones without LFS support, so pointer
+# files would reach the build and Vite would bundle the pointer text as
+# the image. These are small enough to live in Git directly.
 # ---------------------------------------------------------------------------
-*.png                filter=lfs diff=lfs merge=lfs -text
-*.jpg                filter=lfs diff=lfs merge=lfs -text
-*.jpeg               filter=lfs diff=lfs merge=lfs -text
-*.gif                filter=lfs diff=lfs merge=lfs -text
-*.bmp                filter=lfs diff=lfs merge=lfs -text
-*.tiff               filter=lfs diff=lfs merge=lfs -text
-*.tif                filter=lfs diff=lfs merge=lfs -text
-*.ico                filter=lfs diff=lfs merge=lfs -text
-*.webp               filter=lfs diff=lfs merge=lfs -text
-*.psd                filter=lfs diff=lfs merge=lfs -text
-*.ai                 filter=lfs diff=lfs merge=lfs -text
-*.sketch             filter=lfs diff=lfs merge=lfs -text
+*.png                -text
+*.jpg                -text
+*.jpeg               -text
+*.gif                -text
+*.bmp                -text
+*.tiff               -text
+*.tif                -text
+*.ico                -text
+*.webp               -text
+*.psd                -text
+*.ai                 -text
+*.sketch             -text
 
 # ---------------------------------------------------------------------------
 # Video
