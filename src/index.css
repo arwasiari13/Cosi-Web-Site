@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-cosi-red: #c8102e;
+  --color-cosi-black: #0a0a0a;
+  --color-cosi-charcoal: #1a1a1a;
+  --color-cosi-mid: #2d2d2d;
+  --color-cosi-muted: #4a4a4a;
+  --color-cosi-green: #3a6b35;
+  --color-cosi-green-light: #4e8a47;
+  --color-cosi-blue: #2563a8;
+  --color-cosi-blue-light: #3b82c4;
+  --color-cosi-beige: #f5f0e8;
+  --color-cosi-stone: #e8e0d4;
+  --font-inter: 'Inter', sans-serif;
+  --font-manrope: 'Manrope', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+  /* Stop iOS from inflating text when a phone is rotated to landscape */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  /* A stray wide child must never give the whole page a sideways scrollbar */
+  overflow-x: hidden;
+  /* No grey flash box when tapping buttons on Android */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* The header is fixed at 4rem, so anchored sections must clear it */
+section[id] {
+  scroll-margin-top: 4.5rem;
+}
+
+/* Media never overflows its column */
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
+/* Nav underline animation */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: #c8102e;
+  transition: width 0.25s ease;
+}
+@media (hover: hover) {
+  .nav-link:hover::after {
+    width: 100%;
+  }
+}
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Card hover */
+.topic-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+@media (hover: hover) {
+  .topic-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.1);
+    border-color: #c8102e;
+  }
+}
+
+/* Section fade-in */
+.section-fade {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.section-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Timeline */
+.timeline-dot {
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+@media (hover: hover) {
+  .timeline-dot:hover {
+    transform: scale(1.4);
+  }
+}
+
+/* Committee accordion */
+.accordion-content {
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.3s ease;
+  max-height: 0;
+  opacity: 0;
+}
+.accordion-content.open {
+  max-height: 2000px;
+  opacity: 1;
+}
+
+/* Horizontal scroll */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+}
+
+/* Respect the OS "reduce motion" setting */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .section-fade {
+    opacity: 1;
+    transform: none;
+  }
+}

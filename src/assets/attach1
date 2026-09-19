@@ -1,0 +1,575 @@
+Design a modern, premium, responsive ONE-PAGE website for:
+
+COSI 2027
+19th International Conference on Optimization and Information Systems
+
+University of Mila, Algeria
+2–4 May 2027
+
+IMPORTANT:
+This is a single-page website. Do NOT create separate pages.
+The navigation bar should smoothly scroll to sections within the same page using anchor navigation.
+
+The website must feel like a modern international academic/computer-science conference in 2027 — sophisticated, clean, editorial, research-oriented and professional.
+
+DO NOT make it look like:
+- an old university website
+- a generic corporate template
+- a futuristic "AI generated" website
+- an overly decorative technology landing page
+- a website full of glowing effects, neon gradients or excessive animations
+
+Keep the design elegant and human-made.
+
+--------------------------------------------------
+BRAND / VISUAL IDENTITY
+--------------------------------------------------
+
+Use the provided COSI logo as the main logo.
+
+The logo contains:
+- Black COSI lettering
+- Red subtitle: "Conference on Optimization and Information Systems"
+- Green landscape/agriculture elements
+- Blue water/dam elements
+- Mila-inspired landscape/architecture elements
+
+Preserve the logo exactly and do not redesign it.
+
+Main website colors should be derived from the logo:
+
+BLACK:
+#000000
+
+RED:
+Use the same strong red from the COSI logo as the primary accent.
+
+WHITE:
+#FFFFFF
+
+GREEN:
+Use a natural, slightly deep agricultural green inspired by the Mila landscape.
+
+BLUE:
+Use a restrained water blue inspired by the Mila reservoir.
+
+BEIGE / STONE:
+Use very subtly for architectural/stone details.
+
+The dominant colors must remain BLACK + WHITE + RED.
+Green and blue are secondary environmental accents.
+
+Avoid excessive colors.
+
+--------------------------------------------------
+HERO SECTION
+--------------------------------------------------
+
+Create a large, elegant hero section.
+
+Use the provided Mila University / Mila landscape photograph as a major visual element.
+
+The photograph shows:
+- Mila landscape
+- large green agricultural fields
+- hills
+- University/campus area
+- evening sky
+
+Use this image tastefully, preferably as a wide full-width visual or a large image panel.
+
+Do NOT cover the entire image with a heavy dark overlay.
+
+Hero content:
+
+COSI 2027
+
+19th International Conference on
+Optimization and Information Systems
+
+2–4 MAY 2027
+MILA, ALGERIA
+
+University of Mila
+
+Primary CTA:
+"CALL FOR PAPERS"
+
+Secondary CTA:
+"EXPLORE CONFERENCE"
+
+Place the COSI logo prominently but elegantly.
+
+The hero should immediately communicate:
+International research conference + Mila + technology + nature.
+
+--------------------------------------------------
+NAVIGATION
+--------------------------------------------------
+
+Create a sticky top navigation bar.
+
+Left:
+COSI 2027 logo
+
+Right navigation:
+
+ABOUT
+TOPICS
+CALL FOR PAPERS
+PROGRAM
+COMMITTEES
+VENUE
+CONTACT
+
+Add a highlighted button:
+
+SUBMIT A PAPER
+
+IMPORTANT:
+All navigation items must scroll to sections on the SAME PAGE.
+No separate pages.
+
+On mobile, transform the navigation into a clean hamburger menu.
+
+--------------------------------------------------
+SECTION 1 — ABOUT COSI
+--------------------------------------------------
+
+Title:
+
+ABOUT COSI 2027
+
+Use the following official content:
+
+"The International Conference on Optimization and Information Systems (COSI) aims to bring together researchers in Computer Science and Applied Mathematics, primarily from the fields of combinatorial optimization, graph theory, information systems, and artificial intelligence."
+
+For the 2027 edition:
+
+"The 19th edition of COSI will take place in Mila, from 2 to 4 May 2027, and will be hosted by the Laboratory of Intelligent Systems and Informatics (LISI), University of Mila."
+
+Mention that the conference follows previous editions held across Algeria and that the conference tradition includes invited talks, original research papers and demonstrations of research prototypes.
+
+Create a visual "19th EDITION" element.
+
+Also create a subtle horizontal timeline showing previous COSI editions, without overwhelming the section.
+
+--------------------------------------------------
+SECTION 2 — RESEARCH TOPICS
+--------------------------------------------------
+
+Title:
+
+CONFERENCE TOPICS
+
+Subtitle:
+
+"Research at the intersection of optimization, information systems, artificial intelligence and interdisciplinary applications."
+
+Create five modern interactive cards.
+
+CARD 01
+ARTIFICIAL INTELLIGENCE
+
+Include:
+Machine Learning
+Natural Language Processing and Large Language Models
+Explainable AI Models
+Knowledge Representation and Reasoning
+Data Mining and Knowledge Discovery
+Constraints Programming and Satisfiability
+Social Networks and AI-based Recommendations
+Agent-based and Multi-agent Systems
+Ethics, Trust and Fairness of AI Systems
+AI serving other disciplines as an accelerator of discovery
+
+CARD 02
+OPERATIONAL RESEARCH
+& DECISION SUPPORT SYSTEMS
+
+Include:
+Combinatorial Optimization
+Mathematical Programming
+Algorithms and Graph Theory
+Heuristics and Metaheuristics
+Planning and Scheduling
+Game Theory
+Supply Chain Modeling and Optimisation
+
+CARD 03
+BIG DATA
+
+Include:
+Big Data Management Systems
+Data Clouds, Distributed, Decentralized and Parallel Data Management
+Data Analytics
+Warehousing and OLAP
+AI-based Analytics
+Data Uncertainty in Pretraining ML
+Data Quality and Data Trust
+Secure Data
+Energy-efficient Techniques
+
+CARD 04
+PRIVACY & CYBERSECURITY
+
+Include:
+IoT and Sensor Networks
+Information and Network Security
+Dynamic Networks
+Data Privacy and Data Protection
+Detection of Fake News
+Impact of AI Hallucinations
+
+CARD 05
+APPLICATION DOMAINS
+
+Include:
+Interdisciplinary and Cross-fertilisation Approaches
+Digital Twins
+Modeling and Simulation
+Analytics and Real-time Monitoring
+Environment and Sustainable Development
+Agriculture and Food Industry
+Healthcare and Biology
+Transport and Logistics
+Banking and Retail
+
+Design these cards with restrained visual motifs inspired by:
+graphs, networks, data, water, agriculture and mathematical structures.
+
+Do NOT use generic AI robot illustrations.
+
+--------------------------------------------------
+SECTION 3 — CALL FOR PAPERS
+--------------------------------------------------
+
+Create a strong section titled:
+
+CALL FOR PAPERS
+
+Use the official conference scope from the provided content.
+
+Emphasize that COSI 2027 encourages research combining multiple scientific disciplines and applied use cases.
+
+Create a clean paper-submission CTA:
+
+SUBMIT YOUR RESEARCH
+
+Also create an "Important Dates" area.
+
+IMPORTANT:
+The provided conference document does not currently specify the submission deadlines, notification dates, camera-ready deadline, or submission platform.
+
+Therefore DO NOT invent dates.
+
+Use elegant placeholders:
+
+Paper Submission
+COMING SOON
+
+Notification
+COMING SOON
+
+Camera Ready
+COMING SOON
+
+Conference
+02–04 MAY 2027
+
+--------------------------------------------------
+SECTION 4 — PROGRAM
+--------------------------------------------------
+
+Title:
+
+PROGRAM
+
+Create a modern conference-program layout.
+
+Include placeholders for:
+
+KEYNOTE TALKS
+RESEARCH PAPERS
+RESEARCH PROTOTYPE DEMONSTRATIONS
+
+Create a featured keynote speaker card:
+
+Prof. Kamel Adi
+Université du Québec en Outaouais, Canada
+
+Label:
+KEYNOTE SPEAKER
+
+Leave room for additional keynote speakers that may be added later.
+
+Do not invent additional speakers.
+
+--------------------------------------------------
+SECTION 5 — COMMITTEES
+--------------------------------------------------
+
+Title:
+
+COMMITTEES
+
+Organize the information into elegant expandable groups rather than displaying a giant wall of names.
+
+Groups:
+
+HONORARY CHAIRS
+
+Prof. Amirouche Bouchelaghem
+Rector of Mila University, Algeria
+
+
+GENERAL CHAIR
+
+Prof. Nardjes Bouchemal
+University of Mila, Algeria
+
+
+STEERING COMMITTEE
+
+Display the members in a clean searchable/filterable layout.
+
+
+LOCAL ORGANIZATION CHAIR
+
+Madjed Bencheikhlehocine
+University of Mila, Algeria
+
+
+PROGRAM COMMITTEE CHAIRS
+
+Takeaki Uno
+National Institute of Informatics, Tokyo, Japan
+
+
+PROCEEDINGS CHAIRS
+
+Hamza Meguehout
+University of Mila, Algeria
+
+Engelbert Mephu Nguifo
+University Clermont Auvergne, France
+
+
+TECHNICAL PROGRAM COMMITTEE
+
+Display the members as compact academic cards with:
+Name
+Institution
+Country
+
+Do not use profile photos unless photos are actually provided.
+
+--------------------------------------------------
+SECTION 6 — MILA / VENUE
+--------------------------------------------------
+
+Create a visually rich section:
+
+WELCOME TO MILA
+
+Use the provided Mila landscape photograph here as well, but do not simply duplicate it in exactly the same way as the hero.
+
+Mila should visually communicate:
+
+GREEN LANDSCAPES
+MOUNTAINS
+WATER
+UNIVERSITY
+ALGERIAN CHARACTER
+
+Create a modern split layout:
+
+Large Mila image on one side.
+Conference/venue information on the other.
+
+Include:
+
+University of Mila
+Mila, Algeria
+
+Accommodation:
+
+Tapis Rouge, Mila
+
+For doctoral students:
+
+Cité universitaire
+
+Also create placeholders for:
+Travel Information
+Map
+Transportation
+Local Information
+
+Do not invent transportation details.
+
+--------------------------------------------------
+SECTION 7 — CONFERENCE HISTORY
+--------------------------------------------------
+
+Create a subtle horizontal timeline:
+
+COSI HISTORY
+
+2004 — Tizi-Ouzou
+2005 — Bejaia
+2006 — Algiers
+2007 — Oran
+2008 — Tizi-Ouzou
+2009 — Annaba
+2010 — Ouargla
+2011 — Guelma
+2012 — Tlemcen
+2013 — Algiers
+2014 — Bejaia
+2015 — Oran
+2016 — Sétif
+2017 — Bouira
+2018 — Oran
+2019 — Tizi-Ouzou
+2025 — Bejaia
+2026 — Batna
+2027 — Mila
+
+Make 2027 visually highlighted as the current edition.
+
+--------------------------------------------------
+SECTION 8 — CONTACT
+--------------------------------------------------
+
+Title:
+
+GET IN TOUCH
+
+Create a simple contact section.
+
+Include:
+
+COSI 2027
+University of Mila
+Mila, Algeria
+
+Website reference:
+Univmila / COSI2027
+
+Leave a clear placeholder for:
+Conference Email
+Social Media
+Submission Platform
+
+because these details are not provided yet.
+
+--------------------------------------------------
+FOOTER
+--------------------------------------------------
+
+Minimal black footer.
+
+COSI 2027
+
+19th International Conference on
+Optimization and Information Systems
+
+University of Mila — Algeria
+
+2–4 May 2027
+
+Include navigation links again.
+
+--------------------------------------------------
+DESIGN LANGUAGE
+--------------------------------------------------
+
+The visual identity should combine:
+
+ACADEMIC
++
+MODERN
++
+ALGERIAN / MILA LANDSCAPE
++
+COMPUTER SCIENCE
++
+NATURAL ENVIRONMENT
+
+Use strong typography and generous whitespace.
+
+Typography:
+Use a modern sans-serif font such as Inter, Manrope, or similar.
+
+Headings:
+Large, bold, black.
+
+Accent:
+Red from the original COSI logo.
+
+Body:
+Dark charcoal rather than pure black where appropriate.
+
+Use thin lines and subtle borders.
+
+Use rounded corners sparingly.
+
+Use subtle animations/micro-interactions:
+- navigation underline
+- card hover
+- gentle image movement
+- smooth scrolling
+- subtle section transitions
+
+Avoid:
+- neon
+- excessive gradients
+- glowing cards
+- 3D AI objects
+- robots
+- circuit-board clichés
+- excessive particles
+- excessive glassmorphism
+- huge amounts of animation
+
+The website must look like it was designed by a professional human designer for a serious international research conference.
+
+--------------------------------------------------
+RESPONSIVENESS
+--------------------------------------------------
+
+Design desktop first at 1440px width.
+
+Also create responsive layouts for:
+1280px
+1024px
+768px
+390px
+
+On mobile:
+- compact sticky navbar
+- hamburger menu
+- stacked hero
+- single-column topic cards
+- horizontally scrollable or accordion-style conference history
+- readable committee sections
+- properly cropped Mila photograph
+
+--------------------------------------------------
+OVERALL IMPRESSION
+--------------------------------------------------
+
+When someone opens the website, the first impression should be:
+
+"COSI 2027 is an international research conference hosted in Mila, Algeria."
+
+It should feel prestigious but not pretentious.
+
+It should feel modern but not artificially futuristic.
+
+It should connect the conference's scientific themes with Mila's real identity:
+agriculture, green landscapes, mountains, water, university and Algerian heritage.
+
+Use the provided COSI logo and the provided Mila landscape photograph as real brand assets.
+Do not replace them with AI-generated alternatives.

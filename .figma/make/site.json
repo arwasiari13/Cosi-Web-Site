@@ -1,0 +1,12 @@
+{
+  "title": "COSI 2027 — 19th International Conference on Optimization and Information Systems",
+  "description": "COSI 2027, the 19th International Conference on Optimization and Information Systems, takes place 2–4 May 2027 at the University of Mila, Algeria, hosted by the LISI laboratory.",
+  "language": "en",
+  "robots": {
+    "index": true
+  },
+  "accessibility": {
+    "addBypassLinks": true,
+    "ignoreReducedMotion": false
+  }
+}
