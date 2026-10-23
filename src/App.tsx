@@ -1284,6 +1284,10 @@ function Footer() {
             University of Mila, Algeria
           </p>
         </div>
+        <p className="mt-4 text-[11px] text-white/35 text-center">
+          Website designed by engineering student{" "}
+          <span className="text-white/60 font-medium">Arwa Siari</span>
+        </p>
       </div>
     </footer>
   )
