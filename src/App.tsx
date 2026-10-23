@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react"
-import navLogo from "./assets/nav-logo.png"
 import uniMilaLogo from "./assets/new-nav-logo.png"
+import lisiLogo from "./assets/lisi-logo.png"
 import milaLandscape from "./assets/mila-landscape.jpg"
 import heroBg from "./assets/hero-bg2.jpg"
 import heroLogo from "./assets/hero-logo5.png"
@@ -306,37 +306,28 @@ function Navbar() {
       }`}
     >
       <nav className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 flex items-center justify-between h-16 gap-3">
-        {/* Left: University of Mila logo (always visible) + COSI logo (fades in on scroll) */}
-        <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0 min-w-0">
+        {/* Left: University of Mila + LISI logos */}
+        <div className="flex items-center flex-shrink-0 min-w-0">
           <button
             onClick={() => go("#hero")}
-            aria-label="University of Mila — back to top"
-            className="flex items-center gap-2.5 py-2 -my-2"
+            aria-label="University of Mila and LISI Laboratory — back to top"
+            className="flex items-center gap-2 sm:gap-3 py-2 -my-2"
           >
             <img
               src={uniMilaLogo}
               alt="University of Mila"
               className="h-7 sm:h-8 lg:h-9 w-auto"
             />
-          </button>
-          {/* Separator only earns its place once the COSI mark is showing */}
-          <div
-            className={`w-px h-6 bg-current transition-opacity duration-300 ${
-              solid ? "opacity-20" : "opacity-0"
-            }`}
-            style={{ color: solid ? "#000" : "#fff" }}
-          />
-          <button
-            onClick={() => go("#hero")}
-            aria-label="COSI 2027 — back to top"
-            className="py-2 -my-2"
-          >
-            <img
-              src={navLogo}
-              alt="COSI 2027"
-              className={`h-7 sm:h-8 lg:h-9 w-auto transition-opacity duration-300 ${
-                solid ? "opacity-100" : "opacity-0 pointer-events-none w-0"
+            <span
+              aria-hidden="true"
+              className={`w-px h-6 transition-colors duration-300 ${
+                solid ? "bg-black/20" : "bg-white/40"
               }`}
+            />
+            <img
+              src={lisiLogo}
+              alt="LISI Laboratory"
+              className="h-7 sm:h-8 lg:h-9 w-auto"
             />
           </button>
         </div>
@@ -460,7 +451,7 @@ function Hero() {
         </div>
 
         {/* Conference title */}
-        <p className="text-base sm:text-xl lg:text-2xl text-white/90 font-light leading-snug mb-5 max-w-2xl px-2">
+        <p className="text-base sm:text-xl lg:text-2xl text-white/90 font-light leading-snug mb-3 max-w-2xl px-2">
           19th International Conference on
           <br />
           <span className="font-semibold text-white">
@@ -468,12 +459,20 @@ function Hero() {
           </span>
         </p>
 
-        {/* Date / location */}
-        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 mb-8 sm:mb-9 text-white text-[11px] sm:text-sm font-semibold tracking-[0.2em] sm:tracking-[0.25em] uppercase">
-          <span>02–04 May 2027</span>
-          <span className="text-white/40">|</span>
-          <span>Mila, Algeria</span>
-        </div>
+        {/* Organizer */}
+        <p className="text-[13px] sm:text-base text-white/70 font-light mb-5 px-2">
+          Organized by{" "}
+          <span className="font-semibold text-white">LISI Lab</span>, University
+          of Mila, Algeria
+        </p>
+
+        {/* Dates */}
+        <p
+          className="mb-8 sm:mb-9 text-white text-sm sm:text-lg font-extrabold tracking-[0.2em] sm:tracking-[0.25em] uppercase"
+          style={{ fontFamily: "Manrope, sans-serif" }}
+        >
+          02–04 May 2027
+        </p>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row w-full max-w-xs sm:max-w-none justify-center gap-3 sm:gap-4">
