@@ -723,6 +723,9 @@ function Topics() {
 
 // ─── CALL FOR PAPERS ─────────────────────────────────────────────────────────
 
+const PAPER_TEMPLATES_URL =
+  "https://link.springer.com/series/558/information-for-authors-and-editors"
+
 function CallForPapers() {
   return (
     <Fade id="cfp" className="py-16 sm:py-24 lg:py-36 bg-[#0a0a0a]">
@@ -738,15 +741,67 @@ function CallForPapers() {
             demonstrating applied use cases in optimization, AI, and information
             systems.
           </p>
-          <p className="text-white/70 leading-relaxed mb-10">
+          <p className="text-white/70 leading-relaxed mb-5">
             Accepted papers will be presented at the conference and included in
             the proceedings. Contributions may include research papers on
             theoretical foundations, experimental studies, algorithmic
             developments, and demonstrations of research prototypes.
           </p>
-          <button className="w-full sm:w-auto px-8 py-4 bg-[#c8102e] text-white font-semibold text-[13px] sm:text-sm tracking-[0.15em] uppercase hover:bg-[#a50d25] transition-colors">
-            Submit Your Research
-          </button>
+          <p className="text-white/70 leading-relaxed mb-5">
+            As for previous editions, we invite submissions in two categories:
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
+            {[
+              { title: "Regular Papers", pages: "Up to 12 pages", note: "LNCS format" },
+              { title: "Demo Papers", pages: "Up to 4 pages", note: "Research prototypes" },
+            ].map((c) => (
+              <div
+                key={c.title}
+                className="border border-white/10 border-l-2 border-l-[#c8102e] bg-white/[0.03] p-5"
+              >
+                <h3
+                  className="text-white text-lg font-bold mb-1"
+                  style={{ fontFamily: "Manrope, sans-serif" }}
+                >
+                  {c.title}
+                </h3>
+                <p className="text-[#c8102e] text-sm font-semibold tracking-wide">
+                  {c.pages}
+                </p>
+                <p className="text-[10px] font-semibold tracking-[0.3em] text-white/35 uppercase mt-2">
+                  {c.note}
+                </p>
+              </div>
+            ))}
+          </div>
+          <p className="text-white/70 leading-relaxed mb-10">
+            Both categories of papers should be submitted in PDF
+            format through the Microsoft Conference Management Toolkit (CMT).
+            Authors should adhere to Springer's guidelines and utilize the
+            provided templates for paper preparation, available{" "}
+            <a
+              href={PAPER_TEMPLATES_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white underline underline-offset-4 decoration-[#c8102e] hover:text-[#c8102e] transition-colors"
+            >
+              here
+            </a>{" "}
+            in both LaTeX and Word formats.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <button className="w-full sm:w-auto px-8 py-4 bg-[#c8102e] text-white font-semibold text-[13px] sm:text-sm tracking-[0.15em] uppercase hover:bg-[#a50d25] transition-colors">
+              Submit Your Research
+            </button>
+            <a
+              href={PAPER_TEMPLATES_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-8 py-4 border border-white/25 text-white text-center font-semibold text-[13px] sm:text-sm tracking-[0.15em] uppercase hover:border-white hover:bg-white/5 transition-colors"
+            >
+              Paper Templates (LaTeX &amp; Word)
+            </a>
+          </div>
         </div>
 
         <div>
@@ -756,7 +811,7 @@ function CallForPapers() {
           <div className="flex flex-col divide-y divide-white/[0.07]">
             {[
               {
-                label: "Paper Submission",
+                label: "Paper Submission Deadline",
                 date: "COMING SOON",
                 highlight: false,
               },
@@ -790,9 +845,14 @@ function CallForPapers() {
           </div>
           <div className="mt-8 border border-white/10 p-5 sm:p-6">
             <p className="text-[10px] font-semibold tracking-[0.3em] text-white/30 uppercase mb-2">
-              Submission Platform
+              CMT Acknowledgment
             </p>
-            <p className="text-white/25 text-sm">Details to be announced.</p>
+            <p className="text-white/50 text-sm leading-relaxed">
+              The Microsoft CMT service was used for managing the peer-reviewing
+              process for this conference. This service was provided for free by
+              Microsoft and they bore all expenses, including costs for Azure
+              cloud services as well as for software development and support.
+            </p>
           </div>
         </div>
       </div>
