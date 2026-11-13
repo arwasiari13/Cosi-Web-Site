@@ -789,9 +789,14 @@ function CallForPapers() {
             in both LaTeX and Word formats.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
-            <button className="w-full sm:w-auto px-8 py-4 bg-[#c8102e] text-white font-semibold text-[13px] sm:text-sm tracking-[0.15em] uppercase hover:bg-[#a50d25] transition-colors">
-              Submit Your Research
-            </button>
+            <a
+              href="https://cmt3.research.microsoft.com/COSI2027/ "
+              target="_blank"
+              rel="Microsoft CMT"
+              className="w-full sm:w-auto px-8 py-4 bg-[#c8102e] text-white text-center font-semibold text-[13px] sm:text-sm tracking-[0.15em] uppercase hover:bg-[#a50d25] transition-colors"
+            >
+  Submit Your Research
+</a>
             <a
               href={PAPER_TEMPLATES_URL}
               target="_blank"
