@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { label: "About", href: "#about" },
   { label: "Topics", href: "#topics" },
   { label: "Call for Papers", href: "#cfp" },
+  { label: "Important Dates", href: "#dates" },
   { label: "Program", href: "#program" },
   { label: "Committees", href: "#committees" },
   { label: "Venue", href: "#venue" },
@@ -734,164 +735,205 @@ function Topics() {
 const PAPER_TEMPLATES_URL = "https://cosi.isima.fr/cosi2025/soumettre.php"
 const CMT_URL = "https://cmt3.research.microsoft.com/COSI2027/"
 
+const linkCls =
+  "text-white underline underline-offset-4 decoration-[#c8102e] hover:text-[#c8102e] transition-colors"
+
+function ColumnLabel({ children }: { children: React.ReactNode }) {
+  return (
+    <p className="text-[10px] font-semibold tracking-[0.3em] text-white/35 uppercase mb-5 pb-3 border-b border-white/10">
+      {children}
+    </p>
+  )
+}
+
 function CallForPapers() {
   return (
     <Fade id="cfp" className="py-16 sm:py-24 lg:py-36 bg-[#0a0a0a]">
-      <div className="max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-12 grid lg:grid-cols-2 gap-10 sm:gap-14 lg:gap-24 items-start">
-        <div>
+      <div className="max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-12">
+        <div className="max-w-2xl mb-10 sm:mb-14">
           <SectionLabel>Submissions</SectionLabel>
           <SectionTitle light>Call for Papers</SectionTitle>
           <Divider />
-          <p className="text-white/70 leading-relaxed mb-5">
-            COSI 2027 welcomes original, unpublished research contributions from
-            all areas within the scope of the conference. We especially
-            encourage submissions combining multiple scientific disciplines and
-            demonstrating applied use cases in optimization, AI, and information
-            systems.
-          </p>
-          <p className="text-white/70 leading-relaxed mb-5">
-            Accepted papers will be presented at the conference and included in
-            the proceedings. Contributions may include research papers on
-            theoretical foundations, experimental studies, algorithmic
-            developments, and demonstrations of research prototypes.
-          </p>
-          <p className="text-white/70 leading-relaxed mb-5">
-            As in previous editions, submissions are invited in two categories:
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
-            {[
-              { title: "Regular Papers", pages: "Up to 12 pages", note: "LNCS format" },
-              { title: "Short Papers", pages: "Up to 4 pages", note: "LNCS format" },
-            ].map((c) => (
-              <div
-                key={c.title}
-                className="border border-white/10 border-l-2 border-l-[#c8102e] bg-white/[0.03] p-5"
-              >
-                <h3
-                  className="text-white text-lg font-bold mb-1"
-                  style={{ fontFamily: "Manrope, sans-serif" }}
-                >
-                  {c.title}
-                </h3>
-                <p className="text-[#c8102e] text-sm font-semibold tracking-wide">
-                  {c.pages}
-                </p>
-                <p className="text-[10px] font-semibold tracking-[0.3em] text-white/35 uppercase mt-2">
-                  {c.note}
-                </p>
-              </div>
-            ))}
-          </div>
-          <p className="text-white/70 leading-relaxed mb-5">
-            Papers must be submitted in PDF format through the{" "}
-            <a
-              href={CMT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white underline underline-offset-4 decoration-[#c8102e] hover:text-[#c8102e] transition-colors"
-            >
-              Microsoft Conference Management Toolkit (CMT)
-            </a>
-            . Formatting guidelines (LaTeX and Word templates) are available{" "}
-            <a
-              href={PAPER_TEMPLATES_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white underline underline-offset-4 decoration-[#c8102e] hover:text-[#c8102e] transition-colors"
-            >
-              here
-            </a>
-            .
-          </p>
-          <div className="border-l-2 border-[#c8102e] pl-5 mb-10">
-            <p className="text-[10px] font-semibold tracking-[0.3em] text-white/35 uppercase mb-2">
-              Publication
-            </p>
-            <p className="text-white/70 leading-relaxed">
-              Accepted and presented papers will appear in the online
-              conference proceedings. Discussions are ongoing with Springer to
-              publish post-conference proceedings in the CCIS series, indexed
-              in major databases such as DBLP, Google Scholar, EI-Compendex,
-              Mathematical Reviews, SCImago, and Scopus. CCIS volumes are also
-              eligible for consideration in special issues.
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <a
-              href={CMT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 py-4 bg-[#c8102e] text-white text-center font-semibold text-[13px] sm:text-sm tracking-[0.15em] uppercase hover:bg-[#a50d25] transition-colors"
-            >
-  Submit Your Research
-</a>
-            <a
-              href={PAPER_TEMPLATES_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 py-4 border border-white/25 text-white text-center font-semibold text-[13px] sm:text-sm tracking-[0.15em] uppercase hover:border-white hover:bg-white/5 transition-colors"
-            >
-              Paper Templates (LaTeX &amp; Word)
-            </a>
-          </div>
         </div>
 
-        <div>
-          <p className="text-[10px] font-semibold tracking-[0.3em] text-white/30 uppercase mb-6">
-            Important Dates
-          </p>
-          <div className="flex flex-col divide-y divide-white/[0.07]">
-            {[
-              {
-                label: "Abstract Submission Deadline",
-                date: "20 JANUARY 2027",
-                highlight: false,
-              },
-              {
-                label: "Full Paper Submission Deadline",
-                date: "29 JANUARY 2027",
-                highlight: false,
-              },
-              {
-                label: "Notification to Authors",
-                date: "10 APRIL 2027",
-                highlight: false,
-              },
-              {
-                label: "Camera Ready Submission Deadline",
-                date: "20 APRIL 2027",
-                highlight: false,
-              },
-              { label: "Conference", date: "02–04 MAY 2027", highlight: true },
-            ].map((d) => (
-              <div
-                key={d.label}
-                className="py-4 sm:py-5 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1"
-              >
-                <span className="text-sm text-white/55">{d.label}</span>
-                <span
-                  className={`text-sm font-bold tracking-wide ${
-                    d.highlight ? "text-[#c8102e]" : "text-white"
-                  }`}
-                  style={{ fontFamily: "Manrope, sans-serif" }}
+        <div className="grid lg:grid-cols-2 gap-12 sm:gap-14 lg:gap-24 items-start">
+          {/* Left: what we're looking for */}
+          <div>
+            <ColumnLabel>Overview</ColumnLabel>
+            <p className="text-white/70 leading-relaxed mb-5">
+              COSI 2027 welcomes original, unpublished research contributions
+              from all areas within the scope of the conference. We especially
+              encourage submissions combining multiple scientific disciplines
+              and demonstrating applied use cases in optimization, AI, and
+              information systems.
+            </p>
+            <p className="text-white/70 leading-relaxed mb-8">
+              Accepted papers will be presented at the conference and included
+              in the proceedings. Contributions may include research papers on
+              theoretical foundations, experimental studies, algorithmic
+              developments, and demonstrations of research prototypes.
+            </p>
+            <p className="text-white/70 leading-relaxed mb-4">
+              As in previous editions, submissions are invited in two
+              categories:
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {[
+                { title: "Regular Papers", pages: "Up to 12 pages", note: "LNCS format" },
+                { title: "Short Papers", pages: "Up to 4 pages", note: "LNCS format" },
+              ].map((c) => (
+                <div
+                  key={c.title}
+                  className="border border-white/10 border-l-2 border-l-[#c8102e] bg-white/[0.03] p-5"
                 >
-                  {d.date}
-                </span>
-              </div>
-            ))}
+                  <h3
+                    className="text-white text-lg font-bold mb-1"
+                    style={{ fontFamily: "Manrope, sans-serif" }}
+                  >
+                    {c.title}
+                  </h3>
+                  <p className="text-[#c8102e] text-sm font-semibold tracking-wide">
+                    {c.pages}
+                  </p>
+                  <p className="text-[10px] font-semibold tracking-[0.3em] text-white/35 uppercase mt-2">
+                    {c.note}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="mt-8 border border-white/10 p-5 sm:p-6">
-            <p className="text-[10px] font-semibold tracking-[0.3em] text-white/30 uppercase mb-2">
-              CMT Acknowledgment
+
+          {/* Right: how to submit and where it gets published */}
+          <div>
+            <ColumnLabel>How to Submit</ColumnLabel>
+            <p className="text-white/70 leading-relaxed mb-8">
+              Papers must be submitted in PDF format through the{" "}
+              <a href={CMT_URL} target="_blank" rel="noopener noreferrer" className={linkCls}>
+                Microsoft Conference Management Toolkit (CMT)
+              </a>
+              . Formatting guidelines (LaTeX and Word templates) are available{" "}
+              <a
+                href={PAPER_TEMPLATES_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={linkCls}
+              >
+                here
+              </a>
+              .
             </p>
-            <p className="text-white/50 text-sm leading-relaxed">
-              The Microsoft CMT service was used for managing the peer-reviewing
-              process for this conference. This service was provided for free by
-              Microsoft and they bore all expenses, including costs for Azure
-              cloud services as well as for software development and support.
-            </p>
+            <div className="border-l-2 border-[#c8102e] pl-5 mb-8">
+              <p className="text-[10px] font-semibold tracking-[0.3em] text-white/35 uppercase mb-2">
+                Publication
+              </p>
+              <p className="text-white/70 leading-relaxed">
+                Accepted and presented papers will appear in the online
+                conference proceedings. Discussions are ongoing with Springer
+                to publish post-conference proceedings in the CCIS series,
+                indexed in major databases such as DBLP, Google Scholar,
+                EI-Compendex, Mathematical Reviews, SCImago, and Scopus. CCIS
+                volumes are also eligible for consideration in special issues.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 mb-8">
+              <a
+                href={CMT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto px-8 py-4 bg-[#c8102e] text-white text-center font-semibold text-[13px] sm:text-sm tracking-[0.15em] uppercase hover:bg-[#a50d25] transition-colors"
+              >
+                Submit Your Research
+              </a>
+              <a
+                href={PAPER_TEMPLATES_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto px-8 py-4 border border-white/25 text-white text-center font-semibold text-[13px] sm:text-sm tracking-[0.15em] uppercase hover:border-white hover:bg-white/5 transition-colors"
+              >
+                Paper Templates (LaTeX &amp; Word)
+              </a>
+            </div>
+            <div className="border border-white/10 p-5 sm:p-6">
+              <p className="text-[10px] font-semibold tracking-[0.3em] text-white/30 uppercase mb-2">
+                CMT Acknowledgment
+              </p>
+              <p className="text-white/50 text-sm leading-relaxed">
+                The Microsoft CMT service was used for managing the
+                peer-reviewing process for this conference. This service was
+                provided for free by Microsoft and they bore all expenses,
+                including costs for Azure cloud services as well as for
+                software development and support.
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+    </Fade>
+  )
+}
+
+// ─── IMPORTANT DATES ─────────────────────────────────────────────────────────
+
+const IMPORTANT_DATES = [
+  { label: "Abstract Submission Deadline", day: "20", month: "January 2027" },
+  { label: "Full Paper Submission Deadline", day: "29", month: "January 2027" },
+  { label: "Notification to Authors", day: "10", month: "April 2027" },
+  { label: "Camera Ready Submission Deadline", day: "20", month: "April 2027" },
+  { label: "Conference Dates", day: "02–04", month: "May 2027", highlight: true },
+]
+
+function ImportantDates() {
+  return (
+    <Fade id="dates" className="py-16 sm:py-24 lg:py-32 bg-[#f7f7f5]">
+      <div className="max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-12">
+        <div className="max-w-2xl mb-10 sm:mb-14">
+          <SectionLabel>Timeline</SectionLabel>
+          <SectionTitle>Important Dates</SectionTitle>
+          <Divider />
+        </div>
+
+        <ol className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          {IMPORTANT_DATES.map((d, i) => (
+            <li
+              key={d.label}
+              className={`p-6 flex flex-col border ${
+                d.highlight
+                  ? "bg-[#c8102e] border-[#c8102e] text-white"
+                  : "bg-white border-gray-200 text-[#0a0a0a]"
+              }`}
+            >
+              <p
+                className={`text-[10px] font-bold tracking-[0.3em] mb-6 ${
+                  d.highlight ? "text-white/70" : "text-[#c8102e]"
+                }`}
+              >
+                {String(i + 1).padStart(2, "0")}
+              </p>
+              <p
+                className="text-4xl font-black leading-none mb-1"
+                style={{ fontFamily: "Manrope, sans-serif" }}
+              >
+                {d.day}
+              </p>
+              <p
+                className={`text-sm font-semibold mb-6 ${
+                  d.highlight ? "text-white/90" : "text-[#4a4a4a]"
+                }`}
+              >
+                {d.month}
+              </p>
+              <p
+                className={`mt-auto pt-4 border-t text-[13px] leading-snug ${
+                  d.highlight
+                    ? "border-white/25 text-white font-semibold"
+                    : "border-gray-100 text-[#4a4a4a]"
+                }`}
+              >
+                {d.label}
+              </p>
+            </li>
+          ))}
+        </ol>
       </div>
     </Fade>
   )
@@ -1361,6 +1403,7 @@ export default function App() {
       <About />
       <Topics />
       <CallForPapers />
+      <ImportantDates />
       <Program />
       <Committees />
       <Venue />
