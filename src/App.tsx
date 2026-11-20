@@ -532,14 +532,14 @@ function About() {
           <SectionLabel>About the Conference</SectionLabel>
           <SectionTitle>About COSI 2027</SectionTitle>
           <Divider />
-          <p className="text-[#4a4a4a] text-base sm:text-lg leading-relaxed mb-5">
+          <p className="text-[#4a4a4a] text-base sm:text-lg leading-relaxed text-justify hyphens-auto mb-5">
             The International Conference on Optimization and Information Systems
             (COSI) aims to bring together researchers in Computer Science and
             Applied Mathematics, primarily from the fields of combinatorial
             optimization, graph theory, information systems, and artificial
             intelligence.
           </p>
-          <p className="text-[#4a4a4a] leading-relaxed mb-5">
+          <p className="text-[#4a4a4a] leading-relaxed text-justify hyphens-auto mb-5">
             The 19th edition of COSI will take place in Mila, from 2 to 4 May
             2027, and will be hosted by the Laboratory of Intelligent Systems
             and Informatics (LISI), University of Mila. Following a tradition
@@ -547,7 +547,7 @@ function About() {
             talks, original research papers, and demonstrations of research
             prototypes.
           </p>
-          <p className="text-[#4a4a4a] leading-relaxed">
+          <p className="text-[#4a4a4a] leading-relaxed text-justify hyphens-auto">
             Since its inaugural edition in 2004, COSI has united Algerian
             universities and the international research community, visiting
             cities from Tizi-Ouzou to Oran, Annaba to Tlemcen — each edition
@@ -627,13 +627,13 @@ function Topics() {
           <SectionLabel>Research Areas</SectionLabel>
           <SectionTitle>Conference Topics</SectionTitle>
           <Divider />
-          <p className="text-[#4a4a4a] leading-relaxed mb-4">
+          <p className="text-[#4a4a4a] leading-relaxed text-justify hyphens-auto mb-4">
             COSI 2027 is organized around five main tracks, with a
             non-exhaustive list of related keywords. This edition particularly
             encourages interdisciplinary papers that integrate methods and
             concepts from multiple scientific domains.
           </p>
-          <p className="text-[#4a4a4a] leading-relaxed">
+          <p className="text-[#4a4a4a] leading-relaxed text-justify hyphens-auto">
             Many research problems today require expertise spanning several
             fields — such as astrophysics, molecular chemistry, biology, and
             social sciences — in close interaction with computer science.
@@ -760,20 +760,20 @@ function CallForPapers() {
           {/* Left: what we're looking for */}
           <div>
             <ColumnLabel>Overview</ColumnLabel>
-            <p className="text-white/70 leading-relaxed mb-5">
+            <p className="text-white/70 leading-relaxed text-justify hyphens-auto mb-5">
               COSI 2027 welcomes original, unpublished research contributions
               from all areas within the scope of the conference. We especially
               encourage submissions combining multiple scientific disciplines
               and demonstrating applied use cases in optimization, AI, and
               information systems.
             </p>
-            <p className="text-white/70 leading-relaxed mb-8">
+            <p className="text-white/70 leading-relaxed text-justify hyphens-auto mb-8">
               Accepted papers will be presented at the conference and included
               in the proceedings. Contributions may include research papers on
               theoretical foundations, experimental studies, algorithmic
               developments, and demonstrations of research prototypes.
             </p>
-            <p className="text-white/70 leading-relaxed mb-4">
+            <p className="text-white/70 leading-relaxed text-justify hyphens-auto mb-4">
               As in previous editions, submissions are invited in two
               categories:
             </p>
@@ -806,7 +806,7 @@ function CallForPapers() {
           {/* Right: how to submit and where it gets published */}
           <div>
             <ColumnLabel>How to Submit</ColumnLabel>
-            <p className="text-white/70 leading-relaxed mb-8">
+            <p className="text-white/70 leading-relaxed text-justify hyphens-auto mb-8">
               Papers must be submitted in PDF format through the{" "}
               <a href={CMT_URL} target="_blank" rel="noopener noreferrer" className={linkCls}>
                 Microsoft Conference Management Toolkit (CMT)
@@ -826,7 +826,7 @@ function CallForPapers() {
               <p className="text-[10px] font-semibold tracking-[0.3em] text-white/35 uppercase mb-2">
                 Publication
               </p>
-              <p className="text-white/70 leading-relaxed">
+              <p className="text-white/70 leading-relaxed text-justify hyphens-auto">
                 Accepted and presented papers will appear in the online
                 conference proceedings. Discussions are ongoing with Springer
                 to publish post-conference proceedings in the CCIS series,
@@ -857,7 +857,7 @@ function CallForPapers() {
               <p className="text-[10px] font-semibold tracking-[0.3em] text-white/30 uppercase mb-2">
                 CMT Acknowledgment
               </p>
-              <p className="text-white/50 text-sm leading-relaxed">
+              <p className="text-white/50 text-sm leading-relaxed text-justify hyphens-auto">
                 The Microsoft CMT service was used for managing the
                 peer-reviewing process for this conference. This service was
                 provided for free by Microsoft and they bore all expenses,
@@ -975,7 +975,7 @@ function Program() {
               >
                 {t.title}
               </h3>
-              <p className="text-sm text-[#4a4a4a] leading-relaxed">{t.desc}</p>
+              <p className="text-sm text-[#4a4a4a] leading-relaxed text-justify hyphens-auto">{t.desc}</p>
             </div>
           ))}
         </div>
@@ -1129,7 +1129,7 @@ function Venue() {
               >
                 University of Mila
               </h3>
-              <p className="text-[#4a4a4a] leading-relaxed">
+              <p className="text-[#4a4a4a] leading-relaxed text-justify hyphens-auto">
                 Nestled among rolling green hills and within sight of the Beni
                 Haroun reservoir, the University of Mila combines Algeria's
                 academic heritage with a modern campus. The city of Mila — one
