@@ -19,24 +19,24 @@ const NAV_ITEMS = [
 
 const TOPICS = [
   {
-    num: "01",
+    num: "A",
     title: "Artificial Intelligence",
     items: [
       "Machine Learning",
       "Natural Language Processing and Large Language Models",
-      "Explainable AI Models",
+      "Explainable AI",
       "Knowledge Representation and Reasoning",
       "Data Mining and Knowledge Discovery",
-      "Constraints Programming and Satisfiability",
+      "Constraint Programming and Satisfiability",
       "Social Networks and AI-based Recommendations",
-      "Agent-based and Multi-agent Systems",
-      "Ethics, Trust and Fairness of AI Systems",
-      "AI serving other disciplines as an accelerator of discovery",
+      "Agent-based and Multi-Agent Systems",
+      "Ethics, Trust, and Fairness in AI",
+      "AI as an accelerator for other scientific disciplines",
     ],
   },
   {
-    num: "02",
-    title: "Operational Research & Decision Support Systems",
+    num: "B",
+    title: "Operations Research and Decision Support Systems",
     items: [
       "Combinatorial Optimization",
       "Mathematical Programming",
@@ -44,44 +44,38 @@ const TOPICS = [
       "Heuristics and Metaheuristics",
       "Planning and Scheduling",
       "Game Theory",
-      "Supply Chain Modeling and Optimisation",
+      "Supply Chain Modeling and Optimization",
     ],
   },
   {
-    num: "03",
+    num: "C",
     title: "Big Data",
     items: [
-      "Big Data Management Systems",
-      "Data Clouds, Distributed, Decentralized and Parallel Data Management",
-      "Data Analytics",
-      "Warehousing and OLAP",
-      "AI-based Analytics",
-      "Data Uncertainty in Pretraining ML",
-      "Data Quality and Data Trust",
-      "Secure Data",
-      "Energy-efficient Techniques",
+      "Big Data Management Systems (storage, indexing, query optimization)",
+      "Cloud, Distributed, Decentralized, and Parallel Data Management",
+      "Data Analytics: Warehousing, OLAP, AI-based Analytics",
+      "Data Uncertainty in Machine Learning Pretraining",
+      "Data Quality, Trust, and Security",
+      "Energy-Efficient Data Processing",
     ],
   },
   {
-    num: "04",
-    title: "Privacy & Cybersecurity",
+    num: "D",
+    title: "Privacy and Cybersecurity",
     items: [
       "IoT and Sensor Networks",
       "Information and Network Security",
-      "Dynamic Networks",
-      "Data Privacy and Data Protection",
-      "Detection of Fake News",
-      "Impact of AI Hallucinations",
+      "Dynamic Networks (Ad hoc, WSN, VANETs)",
+      "Data Privacy and Protection",
+      "Fake News Detection and AI Hallucination Mitigation",
     ],
   },
   {
-    num: "05",
+    num: "E",
     title: "Application Domains",
     items: [
-      "Interdisciplinary and Cross-fertilisation Approaches",
-      "Digital Twins",
-      "Modeling and Simulation",
-      "Analytics and Real-time Monitoring",
+      "Interdisciplinary and Cross-Fertilization Approaches",
+      "Digital Twins, Modeling, Simulation, and Real-Time Monitoring of Complex Systems",
       "Environment and Sustainable Development",
       "Agriculture and Food Industry",
       "Healthcare and Biology",
@@ -149,9 +143,14 @@ const COMMITTEES = [
     title: "Program Committee Chairs",
     members: [
       {
-        name: "Takeaki Uno",
-        inst: "National Institute of Informatics",
-        country: "Japan (Tokyo)",
+        name: "Yakoub Salhi",
+        inst: "CRIL – CNRS, Artois University, Lens",
+        country: "France",
+      },
+      {
+        name: "Frédéric Saubion",
+        inst: "LERIA, Angers University",
+        country: "France",
       },
     ],
   },
@@ -627,9 +626,19 @@ function Topics() {
           <SectionLabel>Research Areas</SectionLabel>
           <SectionTitle>Conference Topics</SectionTitle>
           <Divider />
+          <p className="text-[#4a4a4a] leading-relaxed mb-4">
+            COSI 2027 is organized around five main tracks, with a
+            non-exhaustive list of related keywords. This edition particularly
+            encourages interdisciplinary papers that integrate methods and
+            concepts from multiple scientific domains.
+          </p>
           <p className="text-[#4a4a4a] leading-relaxed">
-            Research at the intersection of optimization, information systems,
-            artificial intelligence and interdisciplinary applications.
+            Many research problems today require expertise spanning several
+            fields — such as astrophysics, molecular chemistry, biology, and
+            social sciences — in close interaction with computer science.
+            Artificial intelligence, big data analytics, and optimization or
+            decision-support algorithms often form the cornerstone of such
+            interdisciplinarity.
           </p>
         </div>
 
@@ -644,7 +653,7 @@ function Topics() {
             >
               <div>
                 <p className="text-[10px] font-bold text-[#c8102e] tracking-[0.3em] mb-3">
-                  {topic.num}
+                  TOPIC {topic.num}
                 </p>
                 <h3
                   className="text-[14px] font-bold text-[#0a0a0a] leading-snug"
@@ -685,7 +694,7 @@ function Topics() {
             <div className="flex items-start justify-between mb-6">
               <div>
                 <p className="text-[10px] font-bold text-[#c8102e] tracking-[0.3em] mb-1">
-                  {TOPICS[expanded].num}
+                  TOPIC {TOPICS[expanded].num}
                 </p>
                 <h3
                   className="text-xl sm:text-2xl font-bold text-[#0a0a0a] pr-2"
@@ -722,8 +731,8 @@ function Topics() {
 
 // ─── CALL FOR PAPERS ─────────────────────────────────────────────────────────
 
-const PAPER_TEMPLATES_URL =
-  "https://link.springer.com/series/558/information-for-authors-and-editors"
+const PAPER_TEMPLATES_URL = "https://cosi.isima.fr/cosi2025/soumettre.php"
+const CMT_URL = "https://cmt3.research.microsoft.com/COSI2027/"
 
 function CallForPapers() {
   return (
@@ -747,12 +756,12 @@ function CallForPapers() {
             developments, and demonstrations of research prototypes.
           </p>
           <p className="text-white/70 leading-relaxed mb-5">
-            As for previous editions, we invite submissions in two categories:
+            As in previous editions, submissions are invited in two categories:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
             {[
               { title: "Regular Papers", pages: "Up to 12 pages", note: "LNCS format" },
-              { title: "Demo Papers", pages: "Up to 4 pages", note: "Research prototypes" },
+              { title: "Short Papers", pages: "Up to 4 pages", note: "LNCS format" },
             ].map((c) => (
               <div
                 key={c.title}
@@ -773,11 +782,17 @@ function CallForPapers() {
               </div>
             ))}
           </div>
-          <p className="text-white/70 leading-relaxed mb-10">
-            Both categories of papers should be submitted in PDF
-            format through the Microsoft Conference Management Toolkit (CMT).
-            Authors should adhere to Springer's guidelines and utilize the
-            provided templates for paper preparation, available{" "}
+          <p className="text-white/70 leading-relaxed mb-5">
+            Papers must be submitted in PDF format through the{" "}
+            <a
+              href={CMT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white underline underline-offset-4 decoration-[#c8102e] hover:text-[#c8102e] transition-colors"
+            >
+              Microsoft Conference Management Toolkit (CMT)
+            </a>
+            . Formatting guidelines (LaTeX and Word templates) are available{" "}
             <a
               href={PAPER_TEMPLATES_URL}
               target="_blank"
@@ -785,14 +800,27 @@ function CallForPapers() {
               className="text-white underline underline-offset-4 decoration-[#c8102e] hover:text-[#c8102e] transition-colors"
             >
               here
-            </a>{" "}
-            in both LaTeX and Word formats.
+            </a>
+            .
           </p>
+          <div className="border-l-2 border-[#c8102e] pl-5 mb-10">
+            <p className="text-[10px] font-semibold tracking-[0.3em] text-white/35 uppercase mb-2">
+              Publication
+            </p>
+            <p className="text-white/70 leading-relaxed">
+              Accepted and presented papers will appear in the online
+              conference proceedings. Discussions are ongoing with Springer to
+              publish post-conference proceedings in the CCIS series, indexed
+              in major databases such as DBLP, Google Scholar, EI-Compendex,
+              Mathematical Reviews, SCImago, and Scopus. CCIS volumes are also
+              eligible for consideration in special issues.
+            </p>
+          </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <a
-              href="https://cmt3.research.microsoft.com/COSI2027/ "
+              href={CMT_URL}
               target="_blank"
-              rel="Microsoft CMT"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-4 bg-[#c8102e] text-white text-center font-semibold text-[13px] sm:text-sm tracking-[0.15em] uppercase hover:bg-[#a50d25] transition-colors"
             >
   Submit Your Research
@@ -815,18 +843,23 @@ function CallForPapers() {
           <div className="flex flex-col divide-y divide-white/[0.07]">
             {[
               {
-                label: "Paper Submission Deadline",
-                date: "COMING SOON",
+                label: "Abstract Submission Deadline",
+                date: "20 JANUARY 2027",
                 highlight: false,
               },
               {
-                label: "Notification of Acceptance",
-                date: "COMING SOON",
+                label: "Full Paper Submission Deadline",
+                date: "29 JANUARY 2027",
                 highlight: false,
               },
               {
-                label: "Camera Ready Deadline",
-                date: "COMING SOON",
+                label: "Notification to Authors",
+                date: "10 APRIL 2027",
+                highlight: false,
+              },
+              {
+                label: "Camera Ready Submission Deadline",
+                date: "20 APRIL 2027",
                 highlight: false,
               },
               { label: "Conference", date: "02–04 MAY 2027", highlight: true },
@@ -838,7 +871,7 @@ function CallForPapers() {
                 <span className="text-sm text-white/55">{d.label}</span>
                 <span
                   className={`text-sm font-bold tracking-wide ${
-                    d.highlight ? "text-[#c8102e]" : "text-white/20"
+                    d.highlight ? "text-[#c8102e]" : "text-white"
                   }`}
                   style={{ fontFamily: "Manrope, sans-serif" }}
                 >
@@ -1226,7 +1259,7 @@ function Contact() {
             {[
               { label: "Conference Email", note: "Address coming soon" },
               { label: "Social Media", note: "Channels coming soon" },
-              { label: "Submission Platform", note: "Details coming soon" },
+              { label: "Submission Platform", note: "Microsoft CMT" },
             ].map((c) => (
               <div
                 key={c.label}
